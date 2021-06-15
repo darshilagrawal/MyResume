@@ -14,23 +14,30 @@ struct ContentView: View {
             Color(red: 0.09, green: 0.63, blue: 0.52)
                 .edgesIgnoringSafeArea(.all)
             VStack {
-                Image("DazzDa").resizable()
+                Image("DazzDaa").resizable()
                     .aspectRatio(contentMode: .fit).frame(width: 200, height: 270, alignment: .leading)
                     .clipShape(Circle())
                     .overlay(Circle()
                         .stroke(Color.white, lineWidth: 5))
                 
                 
-                Text("Darshil Agrawal")
-                    .font(Font.custom("Pacifico-Regular", size: 40))
-                    .bold()
-                    .foregroundColor(.white)
-                Text("iOS Developer")
-                    .font(.system(size: 25))
-                    .foregroundColor(.white)
+                VStack {
+                    Text("Darshil Agrawal")
+                        .font(Font.custom("Pacifico-Regular", size: 40))
+                        .bold()
+                        .foregroundColor(.white)
+                    Text("iOS Developer")
+                        .font(.system(size: 25))
+                        .foregroundColor(.white)
+                    
+                }
+               
                 Divider()
-                infoView(imageName: "phone.fill", data: "8849859980")
-                infoView(imageName: "envelope.fill", data: "darshilagrawal2000@gmail.com")
+                VStack {
+                    infoView(imageName: "phone.fill", data: "8849859980")
+                    infoView(imageName: "envelope.fill", data: "darshilagrawal2000@gmail.com")
+                }
+                
             }
         }
     }
