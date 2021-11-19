@@ -26,7 +26,7 @@ struct ContentView: View {
                         .font(Font.custom("Pacifico-Regular", size: 40))
                         .bold()
                         .foregroundColor(.white)
-                    Text("iOS Developer")
+                    Text("iOS Intern at Swiggy")
                         .font(.system(size: 25))
                         .foregroundColor(.white)
                     
